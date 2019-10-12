@@ -1,5 +1,6 @@
 {
 	"prefix": ">",
+	"bot_name": "python-bot",
 
 	"embed_colors": {
 		"success": [52, 235, 73],
@@ -9,7 +10,5 @@
 
 	"commands": {
         "calculate_sum": "sum"
-	},
-
-	"token": "NTEyODYzMzY3MTIwMjg5ODAz.XZK2Rw.bDponTmRZVyczE8ABdjVRk4QQnY"
+	}
 }

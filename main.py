@@ -7,11 +7,14 @@ import embeds
 with open('config.json', 'r') as f:
 	config = json.load(f)
 
+with open('secrets.json', 'r') as f:
+	secrets = json.load(f)
+
 bot = commands.Bot(command_prefix=config['prefix'])
 
 async def on_ready():
 	guild_names = ', '.join([ a.name for a in bot.guilds ])
-	print('python-bot online and logged in as %s' % bot.user)
+	print('%s online and logged in as %s' % (config['bot_name'], bot.user))
 	print('Connected to %s guild(s): %s' % (len(bot.guilds), guild_names))
 	print('Now awaiting commands...')
 
@@ -25,4 +28,4 @@ async def calculate_sum(ctx, *values : int):
 
 bot.add_listener(on_ready)
 bot.add_listener(on_command_error)
-bot.run(config['token'])
+bot.run(secrets['token'])

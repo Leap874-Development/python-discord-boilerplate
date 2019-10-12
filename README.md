@@ -12,9 +12,9 @@ To set up your system, you will need to do the following
 - Install Python3.7 from their [website](https://www.python.org/)
 - Install requirements by running `python -m pip install -r requirements.txt`
 
-You will also need to create an application, through the [discord dev website](https://discordapp.com/developers/) then give it a bot. You will need the bot token in the `config.json` file for the bot to work!
+You will also need to create an application, through the [Discord dev website](https://discordapp.com/developers/) then give it a bot. You will need the bot token in the `config.json` file for the bot to work!
 
-See [this](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token) step by step guide for more help creating a bot!
+See [this](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token) step by step guide for help creating a bot, and obtaining a token.
 
 ## Files
 
@@ -26,6 +26,16 @@ You will need to use these files!
 - `config.json` options and configuration
 - `requirements.txt` required packages
 - `main.py` run this to start the bot
+
+### Secrets file
+
+You will need to create a secrets file, called `secrets.json` in the same folder as `main.py`. In this file, put the following-- however replace BOT_TOKEN with your bot token generated from the [discord dev website](https://discordapp.com/developers/).
+
+```
+{
+	"token": "BOT_TOKEN"
+}
+```
 
 ### Other files
 
@@ -48,6 +58,6 @@ Values that are text (as opposed to a number) should be surrounded by double quo
  Configuration parameters are described below.
 
 - `prefix` bot command prefix
+- `bot_name` the name of your bot, can be anything
 - `embed_colors` side-color of the bot messages (in rgb)
 - `commands` command names, and the actual command itself-- use this if you want to rename a command
-- `token` bot token from the [discord api](https://discordapp.com/developers/)
