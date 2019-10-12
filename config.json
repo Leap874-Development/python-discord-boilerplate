@@ -1,0 +1,15 @@
+{
+	"prefix": ">",
+
+	"embed_colors": {
+		"success": [52, 235, 73],
+		"info": [50, 67, 125],
+		"error": [171, 17, 17]
+	},
+
+	"commands": {
+        "calculate_sum": "sum"
+	},
+
+	"token": "NTEyODYzMzY3MTIwMjg5ODAz.XZK2Rw.bDponTmRZVyczE8ABdjVRk4QQnY"
+}
