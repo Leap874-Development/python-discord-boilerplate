@@ -21,8 +21,13 @@ async def on_ready():
 async def on_command_error(ctx, err):
 	await ctx.send(embed=embeds.CommandErrorEmbed(err, ctx))
 
-@bot.command(name=config['commands']['calculate_sum'], help='')
+@bot.command(name=config['commands']['stop_bot'], help='stops the bot')
 @commands.has_permissions(administrator=True)
+async def stop_bot(ctx):
+	print('Stop command called, bot shutting down')
+	await bot.logout()
+
+@bot.command(name=config['commands']['calculate_sum'], help='adds up a list of integers')
 async def calculate_sum(ctx, *values : int):
     await ctx.send(sum(values))
 

@@ -43,7 +43,6 @@ Don't touch these unless you know what you're doing!
 
 - `database.json` where list data is stored
 - `embeds.py` discord embed classes
-- `venv/` [virtualenv](https://virtualenv.pypa.io/en/latest/) folder
 
 ## Configuration
 

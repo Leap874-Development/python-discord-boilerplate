@@ -9,6 +9,7 @@
 	},
 
 	"commands": {
+		"stop_bot": "stop",
         "calculate_sum": "sum"
 	}
 }
